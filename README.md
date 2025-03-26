@@ -1,27 +1,39 @@
-# Module2Test
+# Angular Library Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+This project is a library management system built with Angular and Firebase. It allows librarians to manage books and users to browse and check out books.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- User authentication with Firebase
+- Book management (CRUD operations)
+- Book checkout system
+- Role-based access control
+- Responsive design
 
-## Code scaffolding
+## Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Configure Firebase credentials in environment.ts
+4. Run `ng serve` to start the development server
 
-## Build
+## Development Process
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The project was developed following these steps:
 
-## Running unit tests
+1. Initial setup with Angular and Firebase
+2. Authentication implementation
+3. Book service with CRUD operations
+4. Book list component
+5. Book form component
+6. Component refactoring for better maintainability
+7. Styling and responsive design
+8. Bug fixes and improvements
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular 15
+- Firebase Authentication
+- Firebase Realtime Database
+- Bootstrap 5
+- TypeScript
