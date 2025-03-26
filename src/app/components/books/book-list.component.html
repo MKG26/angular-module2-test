@@ -1,0 +1,35 @@
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col">
+            <h2>Library Books</h2>
+        </div>
+        <div class="col-auto" *ngIf="isLibrarian">
+            <button class="btn btn-primary" (click)="showAddBookForm = true; editingBook = null">
+                Add New Book
+            </button>
+        </div>
+    </div>
+
+    <div class="row mb-4" *ngIf="(showAddBookForm || editingBook) && isLibrarian">
+        <div class="col-md-6">
+            <app-book-form [book]="newBook" [isEditing]="!!editingBook" (submitBook)="onBookSubmit($event)"
+                (cancel)="cancelEdit()">
+            </app-book-form>
+        </div>
+    </div>
+
+    <div *ngIf="loading" class="text-center my-4">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="!loading">
+        <div class="col">
+            <app-book-table [books]="books" [isLibrarian]="isLibrarian" [currentUserId]="currentUserId"
+                (checkOut)="checkoutBook($event)" (returnBook)="returnBook($event)" (editBook)="startEdit($event)"
+                (deleteBook)="deleteBook($event)">
+            </app-book-table>
+        </div>
+    </div>
+</div>
