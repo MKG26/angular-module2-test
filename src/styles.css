@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.table {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+}
+
+/* Custom spacing */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Badge styles */
+.badge {
+    padding: 8px 12px;
+    font-weight: 500;
+}
+
+/* Button hover effects */
+.btn:hover {
+    transform: translateY(-1px);
+    transition: transform 0.2s;
+}
